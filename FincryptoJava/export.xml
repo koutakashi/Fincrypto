@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project default="export">
+    <target name="export">
+    	<ant antfile="javadoc.xml" target="javadoc"/>
+    	<tstamp/>
+    	<zip destfile="//SMBHOST/shared_kenji/Documents/MyNumber/暗号化アセット開発/${DSTAMP}_KeyShareExample.zip" basedir="." 
+    		excludes="bin/**,src/*.java,*.xml">
+    	</zip>
+    </target>
+</project>
